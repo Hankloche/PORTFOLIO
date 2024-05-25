@@ -1,0 +1,101 @@
+/* Style de base pour l'élément <body> */
+body {
+  /* Supprime les marges par défaut du body */
+  margin: 0;
+  /* Définit la police par défaut à Arial, avec une alternative sans-serif si Arial n'est pas disponible */
+  font-family: Arial, sans-serif;
+  /* Définit une image de fond pour le body */
+  background-image: url('V.jpeg');
+  /* Ajuste la taille de l'image de fond pour couvrir tout le body */
+  background-size: cover;
+  /* Définit une couleur de fond noire */
+  background-color: #000000;
+}
+
+/* Style pour l'élément <h1> */
+h1 {
+  /* Centre le texte horizontalement */
+  text-align: center;
+  /* Définit la couleur du texte avec une opacité de 80% */
+  color: rgba(225, 182, 26, 0.801);
+  /* Définit la taille de la police à 60 pixels */
+  font-size: 60px;
+  /* Définit la couleur de fond en noir */
+  background-color: black;
+  /* Supprime les marges par défaut */
+  margin: 0;
+  /* Ajoute un padding de 20 pixels tout autour du texte */
+  padding: 20px;
+  /* Ajoute un bord arrondi de 10 pixels */
+  border-radius: 10px;
+}
+
+/* Style pour un conteneur général */
+.container {
+  /* Utilise Flexbox pour organiser les éléments enfants */
+  display: flex;
+  /* Aligne les éléments en colonne */
+  flex-direction: column;
+  /* Centre les éléments horizontalement */
+  align-items: center;
+}
+
+/* Style pour un conteneur de contenu */
+.content {
+  /* Utilise Flexbox pour organiser les éléments enfants */
+  display: flex;
+  /* Justifie l'espace entre les éléments enfants */
+  justify-content: space-between;
+  /* Définit la largeur à 80% du conteneur parent */
+  width: 80%;
+  /* Ajoute une marge supérieure de 20 pixels */
+  margin-top: 20px;
+}
+
+/* Style pour une section de texte */
+.text {
+  /* Définit la largeur à 60% du conteneur parent */
+  width: 60%;
+  /* Définit la couleur de fond avec une opacité de 56% */
+  background-color: #ffffff;
+  /* Ajoute un padding de 10 pixels tout autour du contenu */
+  padding: 10px;
+  /* Ajoute une marge verticale de 10 pixels */
+  margin: 1px 0;
+  /* Ajoute un bord arrondi de 10 pixels */
+  border-radius: 10px;
+}
+
+/* Style pour une section d'image */
+.image {
+  /* Définit la largeur à 30% du conteneur parent */
+  width: 30%;
+  /* Utilise Flexbox pour organiser les éléments enfants */
+  display: flex;
+  /* Aligne les éléments enfants au centre verticalement */
+  align-items: center;
+  /* Centre les éléments enfants horizontalement */
+  justify-content: center;
+}
+
+/* Style pour les images dans la section .image */
+.image img {
+  /* Limite la largeur maximale de l'image à 100% du conteneur parent */
+  max-width: 100%;
+  /* Ajoute un bord arrondi de 10 pixels */
+  border-radius: 10px;
+}
+
+/* Style pour les liens */
+a {
+  /* Définit la couleur du texte à un bleu spécifique */
+  color: #1E90FF;
+  /* Supprime la décoration de texte par défaut (soulignement) */
+  text-decoration: none;
+}
+
+/* Style pour les liens au survol */
+a:hover {
+  /* Ajoute une décoration de texte (soulignement) au survol */
+  text-decoration: underline;
+}

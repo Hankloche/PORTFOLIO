@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('gif.gif');
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément */
+    background-position: center; /* Positionne l'image au centre de l'élément */
+    /* Vous pouvez ajouter d'autres propriétés comme la couleur de fond en cas d'échec de chargement de l'image */
+    background-color: #f0f0f0;
+    
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar {
+    background-color: #2B2B2B;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .logo {
+    transition: all 0.3s ease;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  
+    .nav-active {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .nav-active li {
+      text-align: center;
+      margin: 15px 0;
+    }
+  
+    .nav-active li a {
+      font-size: 20px; /* Modifier la taille de police selon vos préférences */
+    }
+  }
+  
+  
+/* Ajout des transitions pour l'animation du burger menu */
+.burger .line1, .burger .line2, .burger .line3 {
+    transition: all 0.3s ease;
+  }
+  
+  /* Augmentation de l'espace entre les boutons de la navbar */
+  .nav-links li {
+    margin-right: 50px; /* Augmentation de la marge */
+  }
+
+  /* Animation pour le burger menu */
+.burger .line1 {
+    transform-origin: top left;
+  }
+  
+  .burger .line2 {
+    opacity: 1;
+  }
+  
+  .burger .line3 {
+    transform-origin: bottom left;
+  }
+  
+  .nav-active .line1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .nav-active .line2 {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  
+  .nav-active .line3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+
+  .burger .line1,
+  .burger .line2,
+  .burger .line3 {
+    width: 30px; /* Augmentation de la largeur */
+    height: 4px; /* Augmentation de la hauteur */
+    background-color: blue; /* Barre bleue en haut */
+  }
+  
+  .burger .line2 {
+    background-color: white; /* Barre blanche au milieu */
+  }
+  
+  .burger .line3 {
+    background-color: red; /* Barre rouge en bas */
+  }
+
+  .logo img {
+    max-width: 25%; /* Pour s'assurer que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Pour maintenir le ratio hauteur-largeur de votre logo */
+  }
+  
+  .nav-links li a:hover {
+    color: blue; /* Changez la couleur selon vos préférences */
+    font-size: 28px; /* Taille agrandie au survol */
+  }
+  
+  /* Ajoutez une transition pour la taille de police */
+  .nav-links li a {
+    transition: font-size 0.3s ease; /* Transition douce de la taille de police */
+  }
+  
+
+  .navbar {
+    /* Vos autres styles existants */
+    margin-bottom: 60px; /* Ajustez la marge basse selon la hauteur de votre barre de navigation */
+  }
+  
+  .fenetre {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Largeur originale */
+    height: 200px; /* Hauteur originale */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .contenu {
+    padding: 10px;
+  }
+  
+  
+  
+  .barre-titre {
+    background-color: #ddd;
+    padding: 5px;
+    cursor: move;
+  }
+  
+  .contenu {
+    padding: 10px;
+  }
+  
+  .bouton {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    float: right;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  
+  .bouton:hover {
+    background-color: #aaa;
+  }
+  
