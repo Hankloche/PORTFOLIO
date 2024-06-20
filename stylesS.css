@@ -1,19 +1,26 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: #f8f8f8;
+  background-color: #F0FFF0; /* Vert très clair */
   margin: 0;
   padding: 0;
+  color: #444;
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }
 
 h1 {
-  color: #333;
+  color: #556B2F; /* Vert olive foncé */
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
 table {
@@ -25,29 +32,35 @@ table {
 
 th, td {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 12px;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #8FBC8F; /* Vert olive clair */
   font-weight: bold;
+  color: #fff;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #F0F8F0; /* Vert olive très clair */
+}
+
+tr:hover {
+  background-color: #E0E8E0; /* Vert olive encore plus clair */
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 12px 24px;
+  background-color: #556B2F; /* Vert olive foncé */
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #6B8E23; /* Vert olive moyen */
 }
